@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/answer_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".Answer" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/answer_textView2"
+        android:layout_alignLeft="@+id/answer_button1"
+        android:layout_alignRight="@+id/answer_textView1"
+        android:layout_alignTop="@+id/answer_textView1"
+        android:background="#90000000" />
+
+    <Button
+        android:id="@+id/answer_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/button"
+        android:text="Devam Et" />
+
+    <TextView
+        android:id="@+id/answer_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answer_textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/answer_button1"
+        android:layout_marginTop="81dp"
+        android:layout_marginRight="10dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/answer_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answer_button1"
+        android:layout_alignRight="@+id/answer_button1"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/answer_textView1"
+        android:layout_marginLeft="10dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

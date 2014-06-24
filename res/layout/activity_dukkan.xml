@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dukkan_background"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".Dukkan" >
+
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dukkan_seviyeText"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    
+   
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/dukkan_seviye"
+        android:cacheColorHint="#00000000"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/dukkan_seviyeText"
+        android:background="@drawable/extension"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/dukkan_direnisciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/digitalClock1"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/dukkan_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dukkan_direnisciAdi"
+        android:layout_alignRight="@+id/list"
+        android:textColor="#FFFFFF"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/dukkan_seviyeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dukkan_direnisciAdi"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:textColor="#FFFFFF"
+        android:text="Sevİye: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dukkan_puan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_alignRight="@+id/list"
+        android:layout_toRightOf="@+id/dukkan_puanText"
+        android:text="200"
+        android:gravity="right"
+        android:textColor="#FFFFFF"
+        android:background="#242424"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dukkan_puanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_alignLeft="@+id/dukkan_time"
+        android:text="Puan: "
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dukkan_seviye"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dukkan_direnisciAdi"
+        android:layout_toRightOf="@+id/dukkan_seviyeText"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:background="#242424"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

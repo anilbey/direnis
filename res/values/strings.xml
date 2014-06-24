@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name ="action_settings">216883055135341216883055135341216883055135341216883055135341216883055135341</string>
+    <string name="app_name">Direnis</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_isim_gir">IsimGir</string>
+    <string name="title_activity_sehir_sec">SehirSec</string>
+    <string name="title_activity_ev">Ev</string>
+    <string name="title_activity_dukkan">Dukkan</string>
+    <string name="title_activity_olay">Olay</string>
+    <string name="title_activity_generate">Generate</string>
+    <string name="title_activity_answer">Answer</string>
+    <string name="hello">Hello World, ImageTextListViewActivity!</string>
+    <string name="name">ListViewBaseAdapter</string>
+    <string name="image">Thumbnail</string>
+    <string name="title_activity_high_scores">HighScores</string>
+    <string name="title_activity_nasil_oynanir">Nasıl Oynanır</string>
+    <string name="title_activity_custom_title_bar">CustomTitleBar</string>
+
+</resources>

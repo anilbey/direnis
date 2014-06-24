@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_answer_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".Generate" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/newanswer_btn"
+        android:layout_alignLeft="@+id/newanswer_btn"
+        android:layout_alignRight="@+id/newanswer_btn"
+        android:layout_below="@+id/generate_view1"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="30dp"
+        android:background="#90000000" />
+
+    <View
+        android:id="@+id/generate_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/extension" />
+
+    <Button
+        android:id="@+id/generatebtn3"
+        android:visibility="invisible"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/newanswer_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:text="Buradan Git" />
+
+    <Button
+        android:id="@+id/newanswer_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/generatebtn3"
+        android:layout_alignLeft="@+id/newanswer_maskeimg"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:text="Devam Et" />
+
+    <TextView
+        android:id="@+id/newanswer_time"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/newanswer_tv1"
+        android:layout_alignTop="@+id/newanswer_direnisci_adi"
+        android:gravity="right"
+        android:text="DigitalClock"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/newanswer_tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/newanswer_btn"
+        android:layout_alignRight="@+id/newanswer_btn"
+        android:layout_below="@+id/generate_view1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/newanswer_puantext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newanswer_seviye"
+        android:layout_alignBottom="@+id/newanswer_seviye"
+        android:layout_alignLeft="@+id/newanswer_time"
+        android:text="Puan "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/newanswer_puan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newanswer_seviye"
+        android:layout_alignBottom="@+id/newanswer_seviye"
+        android:layout_alignRight="@+id/newanswer_time"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/newanswer_puantext"
+        android:background="#242424"
+        android:gravity="right"
+        android:text="200"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/newanswer_maskeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newanswer_eldivenimg"
+        android:layout_alignTop="@+id/newanswer_eldivenimg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/text_field"
+        android:src="@android:drawable/spinner_background" />
+
+    <ImageView
+        android:id="@+id/newanswer_eldivenimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newanswer_dukkan"
+        android:layout_alignTop="@+id/newanswer_dukkan"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/newanswer_maskeimg"
+        android:adjustViewBounds="true"
+        android:background="@drawable/text_field"
+        android:src="@android:drawable/spinner_background" />
+
+    <ImageView
+        android:id="@+id/newanswer_destekimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newanswer_dukkan"
+        android:layout_alignTop="@+id/newanswer_eldivenimg"
+        android:layout_toRightOf="@+id/newanswer_eldivenimg"
+        android:adjustViewBounds="true"
+        android:background="@drawable/text_field"
+        android:src="@android:drawable/spinner_background" />
+
+    <TextView
+        android:id="@+id/newanswer_seviyetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newanswer_maskeimg"
+        android:layout_below="@+id/newanswer_time"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Sevİye "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/newanswer_dukkan"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/newanswer_puan"
+        android:layout_below="@+id/newanswer_seviyetext"
+        android:background="@drawable/dukkan_img"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/newanswer_seviye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newanswer_dukkan"
+        android:layout_alignLeft="@+id/newanswer_eldivenimg"
+        android:layout_alignRight="@+id/newanswer_eldivenimg"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="#242424"
+        android:gravity="right"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/newanswer_direnisci_adi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Direnisci Adi"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/newanswer_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newanswer_tv1"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/newanswer_tv1"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

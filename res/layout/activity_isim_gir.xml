@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/isimgir"
+    tools:context=".IsimGir" >
+
+    <EditText
+        android:id="@+id/isim_gir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isimgir_textView1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/geri_don"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/isim_gir"
+        android:layout_alignRight="@+id/isim_gir"
+        android:layout_below="@+id/isim_gir"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="Devam Et" />
+
+    <TextView
+        android:id="@+id/isimgir_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/isim_gir"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:text="Dİrenİşçİ Adı"
+        android:textColor="#D6D6D6"
+        android:textSize="25sp" />
+
+</RelativeLayout>
